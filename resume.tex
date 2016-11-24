@@ -1,0 +1,207 @@
+\documentclass[10pt]{article}
+
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{ Path = /usr/local/texlive/2016/texmf-dist/fonts/opentype/public/fontawesome/ }
+
+\usepackage{fontawesome}
+\usepackage[sfdefault]{roboto}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{ccdfff} % Box color
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{4982dd} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{tabularx}
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+
+\newcommand \jobdesc[4] {%
+	{{\raggedright \large \textbf{\textsc{#1}}, \normalsize\textsc{#2} \hfill \normalsize{\textsc #3 -- #4}}}
+}
+
+\renewcommand\familydefault{\sfdefault}
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+{\sffamily\Huge Edgardo Hames}
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+
+
+\section{Specialization}
+Team Management and Leadership, Microservices, DevOps, High Availability Systems, Telecom Software Products, Operating Systems and Networks, Teaching\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+\jobdesc{Co-founder}{Bitlogic.io}{2016}{Current}\\
+\\
+\jobdesc{Software Engineering Manager}{Arris}{2015}{2016}\\
+\normalsize{Designed micro-services for nDVR platform. Managed and coached engineering team (10 engineers). Delivered platform to multiple customers.}\\
+\\
+\jobdesc{Principal Software Engineer}{Arris}{2013}{2015}\\
+\normalsize{Designed mission-critical components to provide ad decisions and notifications for targeted advertisement in IPTV. Led site-wide initiatives such as automated functional testing, continuous delivery, best practices and some training programs.}\\
+\\
+\jobdesc{Sr Staff Software Engineer}{Arris}{2010}{2013}\\
+\normalsize{Defined requirements and interfaces to handle content metadata and manage physical files of a video-streaming system backend. Drove internal changes to improve product delivery from source builds to product deployment.}\\
+\\
+\jobdesc{Software Designer}{Globant}{2009}{2010}\\
+\normalsize{Led multiple teams to build high-quality systems, including web components, a quasi-real time dynamic scheduler based on JBoss Drools, and RoR static analysis dashboard.}\\
+\\
+\jobdesc{Sr Software Engineer}{Motorola}{2004}{2009}\\
+\normalsize{Led multiple telecom-related projects (BTSs, ATCA, CPE). Automated release management system for several RT Linux projects.}\\
+\\
+\jobdesc{Software Consultant}{Vates}{2003}{2004}\\
+\normalsize{Implemented an insurance policy management system with Java/JSP and Struts.}\\
+\\
+\jobdesc{Research Intern}{UTN FRC}{2002}{2003}\\
+\normalsize{Researched on “Distributed Control Systems based on data networks”. Wrote Linux drivers for the prototype CAN Controller boards.}\\
+\\
+\jobdesc{Intern}{Discar}{2002}{2002}\\
+\normalsize{Investigated software technologies, trends and e-commerce alternatives for electronic software distribution.}
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{cp{6.85cm}}
+\faHome & \mbox{Av. Los Fresnos s/n, La Granja, Córdoba, 5115} \\ % Address
+\faPhone & +54 (9 351) 316 0670 \\ % Phone number
+\faEnvelope & \href{mailto:ehames@bitlogic.io}{ehames@bitlogic.io} \\ % Email address
+\faSkype & {ehames} \\ % Skype
+\faGithub & \href{http://github.com/ehames}{http://github.com/ehames} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabularx}{\textwidth}{ll}
+2009 & \large\textsc{MS-equiv in Computer Science}\\
+& \textit{FaMAF, UNC}\\
+\\
+2002 & \large\textsc{Computing Analyst}\\
+& \textit{FaMAF, UNC}\\
+\\
+1994 & \large\textsc{First Certificate in English}\\
+& s\textit{University of Cambridge}\\
+\end{tabularx}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Experience} 
+
+\begin{tabular}{rl}
+2011	 & \textbf{Post-grad Teacher}\\
+& \small Operating Systems Implementation \\
+& \textit{FaMAF, UNC}\\
+
+2010-2012	 & \textbf{Under-grad Teacher}\\
+& \small Programing Paradigms, Computer Networks \\
+& \textit{FaMAF, UNC}\\
+
+2003-2008	 & \textbf{Teaching Assistant (Student)}\\
+& \small Operating System, Computer Networks \\
+& \textit{FaMAF, UNC}\\
+
+2003-2004	 & \textbf{Linux development Instructor}\\
+& \textit{UTN FRC}
+\end{tabular}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{rl}
+\textsc{Languages}
+& Spanish, English\\
+\\ 
+\textsc{Programming}
+& C, C++, Java, Ruby, Go\\
+\\
+\textsc{Management}
+& Effective Communication, \\
+& Team Coordination,\\
+& Negotiation\\
+\\
+\textsc{Social}
+& Member of LUG \& FLOSS projects\\
+\end{tabular}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS & TALKS
+%----------------------------------------------------------------------------------------
+
+\section{Publications and Talks} 
+
+\begin{tabular}{rl}
+\textsc{Talk}
+& \textbf{Jobs for CS grads in Córdoba}\\
+& FaMAF, UNC, 2010\\
+%& \\
+\textsc{Talk}
+& \textbf{Rapid web development using Ruby on  Rails}\\
+& Tech Talks, FaMAF, UNC, 2005\\
+%& \\
+\textsc{Talk}
+& \textbf{Design of low-cost electrocardiograph}\\
+& Hospital Garrahan, Buenos Aires, 2002\\
+\textsc{Poster}
+& \textbf{Emulation of character devices over TCP/IP}\\
+& XXXI JAIIO, Santa Fe, 2002
+\end{tabular}\\[10pt]
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}
